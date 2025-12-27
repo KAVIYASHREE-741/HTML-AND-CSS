@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Thousand Years - Music Player</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .player {
+            width: 360px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        /* Picture */
+        .image {
+            width: 100%;
+            height: 240px;
+            background-image: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .song {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .artist {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 15px;
+        }
+
+        /* Progress bar */
+        .progress {
+            width: 100%;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 40%;
+            height: 100%;
+            background: #4CAF50;
+        }
+
+        .progress:hover .progress-fill {
+            width: 70%;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background: #eeeeee;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="player">
+    <div class="image"></div>
+
+    <div class="content">
+        <div class="song">A Thousand Years</div>
+        <div class="artist">Christina Perri</div>
+
+        <div class="progress">
+            <div class="progress-fill"></div>
+        </div>
+
+        <div class="controls">
+            <button>⏮ Prev</button>
+            <button>▶ Play</button>
+            <button>⏭ Next</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
